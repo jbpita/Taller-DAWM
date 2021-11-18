@@ -1,7 +1,7 @@
 /*
   Desde Google Fonts, importe las fuentes Poppins. Específicamente el Thin 100, Extra-light 200 y Regular 400. 
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Poppins:wght@100;200;400&display=swap');
 
 
 /*
@@ -9,6 +9,9 @@
   
   Familia de fuentes: 'Poppins', sans-serif
 */
+body{
+  font-family: 'Poppins', sans-serif;
+}
 
 
 /*
@@ -18,7 +21,11 @@
   Relleno: 30px
   Color de fondo: white
 */
-
+.inner-product{
+  border-radius: 5px;
+  border-width: 30px;
+  background-color: white;
+}
 
 /*
   Utilice el selector para el identificador "list"
@@ -27,7 +34,10 @@
   Utilice una plantilla de 4 columnas
   Los elementos se auto justifican en el centro de la rejilla
 */
-
+#list{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
 
 
 /*
@@ -43,6 +53,9 @@
 
   Color #45b77d
 */
+.product-list .product .product-title a:hover {
+  color: #45b77d;
+}
 
 
 /*
@@ -51,3 +64,7 @@
 
   Margen hacia arriba 0.5rem.
 */
+
+small[class*="ric"]{
+  margin-top: 0.5rem;
+}
